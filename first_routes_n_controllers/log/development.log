@@ -1,0 +1,94 @@
+Started GET "/users" for ::1 at 2022-11-09 15:46:18 -0800
+
+ActiveRecord::NoDatabaseError - We could not find your database: first_routes_n_controllers_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+Started GET "/users" for ::1 at 2022-11-09 15:47:02 -0800
+
+ActiveRecord::NoDatabaseError - We could not find your database: first_routes_n_controllers_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+  [1m[35m (113.3ms)[0m  [1m[35mCREATE DATABASE "first_routes_n_controllers_development" ENCODING = 'unicode'[0m
+  [1m[35m (48.6ms)[0m  [1m[35mCREATE DATABASE "first_routes_n_controllers_test" ENCODING = 'unicode'[0m
+Started GET "/users" for ::1 at 2022-11-09 15:47:38 -0800
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/users" for ::1 at 2022-11-09 15:48:53 -0800
+
+SyntaxError - syntax error, unexpected constant, expecting `end'
+    render :json User.all
+                 ^~~~:
+  app/controllers/users_controller.rb:5:in `'
+
+Started GET "/users" for ::1 at 2022-11-09 15:50:20 -0800
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.0ms | Allocations: 274)
+
+
+Started GET "/users" for ::1 at 2022-11-09 15:50:59 -0800
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2708)
+
+
+
+ActionView::MissingTemplate - Missing template users/Hello!, application/Hello! with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/tom/Documents/app_academy/aa-w6d3/first_routes_n_controllers/app/views"
+Did you mean?  layouts/application:
+  app/controllers/users_controller.rb:7:in `index'
+
+Started GET "/users" for ::1 at 2022-11-09 15:51:15 -0800
+
+SyntaxError - syntax error, unexpected local variable or method, expecting `end'
+   render :json text
+                ^~~~:
+  app/controllers/users_controller.rb:7:in `'
+
+Started GET "/users" for ::1 at 2022-11-09 15:51:27 -0800
+
+SyntaxError - syntax error, unexpected local variable or method, expecting `end'
+   render :text text
+                ^~~~:
+  app/controllers/users_controller.rb:7:in `'
+
+Started GET "/users" for ::1 at 2022-11-09 15:51:38 -0800
+
+SyntaxError - syntax error, unexpected local variable or method, expecting `end'
+   render :text abc
+                ^~~:
+  app/controllers/users_controller.rb:7:in `'
+
+Started GET "/users" for ::1 at 2022-11-09 15:52:20 -0800
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 136)
+
+
+Started GET "/users" for ::1 at 2022-11-09 15:52:44 -0800
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 680)
+
+
+
+ActionController::MissingExactTemplate - UsersController#index is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/4c2dd7dca0aeac2f/variables" for ::1 at 2022-11-09 15:52:44 -0800
+Started GET "/users" for ::1 at 2022-11-09 15:52:51 -0800
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 632)
+
+
+
+ActionController::MissingExactTemplate - UsersController#index is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/a584b511c2bd6f20/variables" for ::1 at 2022-11-09 15:52:51 -0800
